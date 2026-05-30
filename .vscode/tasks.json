@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Dev Server",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "panel": "shared", "reveal": "always" },
+      "isBackground": true,
+      "problemMatcher": { "pattern": { "regexp": "." }, "background": {
+        "activeOnStart": true,
+        "beginsPattern": "starting",
+        "endsPattern": "ready"
+      }}
+    },
+    {
+      "label": "Open Lovable",
+      "type": "shell",
+      "command": "open -a 'Google Chrome' 'https://lovable.dev'",
+      "presentation": { "reveal": "silent", "panel": "shared" }
+    },
+    {
+      "label": "Start Watcher",
+      "type": "shell",
+      "command": "python3 scripts/watcher.py",
+      "presentation": { "panel": "dedicated", "reveal": "always" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "🚀 Full Dev Mode",
+      "dependsOn": ["Dev Server", "Start Watcher"],
+      "group": "build",
+      "presentation": { "panel": "shared" }
+    }
+  ]
+}
