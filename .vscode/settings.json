@@ -9,6 +9,7 @@
   ],
   "livePreview.defaultPreviewPath": "https://lovable.dev",
   "livePreview.openPreviewTarget": "Panel",
+  "simpleBrowser.focusLockIndicator.enabled": true,
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.tabSize": 2,
   "files.exclude": {

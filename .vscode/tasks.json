@@ -17,7 +17,7 @@
     {
       "label": "Open Lovable",
       "type": "shell",
-      "command": "open -a 'Google Chrome' 'https://lovable.dev'",
+      "command": "${command:simpleBrowser.show} https://lovable.dev",
       "presentation": { "reveal": "silent", "panel": "shared" }
     },
     {
